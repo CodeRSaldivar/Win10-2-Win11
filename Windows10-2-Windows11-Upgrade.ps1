@@ -36,4 +36,4 @@ Set-RegistryValueForced -Path "HKCU:\Software\Microsoft\PCHC" -Name "UpgradeElig
 
 Invoke-WebRequest -Uri "https://go.microsoft.com/fwlink/?linkid=2171764" -OutFile "C:\Windows\Temp\Windows11InstallationAssistant.exe"
 
-Start-Process "C:\Windows\Temp\Windows11InstallationAssistant.exe" -ArgumentList "/QuietInstall /SkipEULA /Auto Upgrade" -Wait
+Start-Process "C:\Windows\Temp\Windows11InstallationAssistant.exe" -ArgumentList "/QuietInstall /SkipEULA /NoRestartUI /Auto Upgrade" -Wait
